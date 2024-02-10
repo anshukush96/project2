@@ -1,0 +1,545 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.nav li img{
+      width: 80px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+.nav li{
+    display: flex;
+    list-style-type:none;
+}
+.navcenter{
+    border: 2px solid gainsboro;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px red;
+    height:20px;
+    margin-top: 10px;
+}
+.navcenter div a{
+    text-decoration: none;
+    color: black;
+}
+.navcenter div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.font{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.font div{
+    margin-right: 20px;
+}
+.font1{
+    display: flex; 
+    border: 2px solid rgb(120, 113, 113);
+     border-radius: 30px;
+     box-shadow: 5px 5px 20px grey;
+      height: 25px;
+      padding: 5px;
+      color: gray;
+      margin-top: -10px;
+     
+}
+.font1 div{
+    margin-right: 5PX;
+    margin-left: 5px;
+}
+.font div a{
+    text-decoration:none;
+    color: black;
+}
+.images{
+    display: flex;
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin-left: 40px; 
+}
+
+.images1 {
+    display: flex;
+    overflow-x: scroll;
+   
+}
+.images1::-webkit-scrollbar{
+    display: none;
+}
+.images1 img {
+   width: 30px;
+   margin-right: 50px;
+}
+.images1 a{
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+    margin-right: 40px;
+}
+.images1 a:hover{
+    color: rgb(79, 78, 78);
+    border-bottom: 2px solid grey;
+}
+.filter{
+    display: flex;
+    border: 2px solid rgb(125, 122, 122);
+    border-radius: 10px;
+    height: 25px;
+    width: 70px;
+    padding: 10px;
+    padding-top: 12px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.filter a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.display{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(139, 138, 138);
+    border-radius: 20px;
+    padding: 30px;
+    width: 500px;
+}
+.display span{
+    font-size: 20px;
+}
+.rooms{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 0px;
+}
+.rooms div a img{
+    border-radius: 30px;
+    padding: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+.rooms div a{
+    font-size: 20px;
+    padding-top: 5px;
+    text-decoration: none;
+    padding: 25px;
+    color: rgb(129, 127, 127);
+}
+.rooms div{
+    margin-bottom: 30px; 
+     /* border: 2px solid black; */
+
+}
+#fa{
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+    left:310px ;
+    color: black;
+    
+}
+#fa:hover{
+    cursor: pointer;
+    color: red;
+    
+}
+.box{
+    border: 2px solid black;
+    height: 500px;
+    width: 400px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    z-index: 3;
+    /* position: relative;
+    top: 500px; */
+
+}
+.box input{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+#input:checked~.box {
+    display: block;
+}
+.footer{
+    border-bottom: 1px solid rgb(164, 163, 163);
+    margin-left: 10px;
+}
+.footer ul{
+    display: flex;
+   
+}
+.footer li{
+   list-style-type: none;
+   margin-left: 30px;
+   margin-bottom: 10px;
+}
+.footer li a{
+    text-decoration: none;
+    color: rgb(129, 127, 127);
+    font-size: 20px;
+}
+.popular {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-left: 45px;
+    margin-right: 100px;
+    padding-bottom: 30px;
+    /* border-bottom: 1px solid rgb(192, 189, 189); */
+}
+.popular a{ 
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+   
+}
+.popular li{
+    list-style-type: none;
+    margin-top: 20px;
+    font-weight: 600;
+    
+}
+.popular span{
+    color: rgb(122, 122, 122);
+}
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 40px;
+    margin-right: 70px;
+    border-bottom: 1px solid rgb(182, 181, 181);
+    border-top: 1px solid rgb(192, 189, 189);
+}
+.support a{
+    font-size: 17px;
+    text-decoration: none;
+}
+.support a :hover{
+    text-decoration: underline;
+}
+.support span{
+    font-size: 18px;
+    font-weight: 550;
+}
+.support li{
+    list-style-type: none;
+    margin-top: 4px;
+    color: rgb(135, 134, 134);
+
+}
+.last {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 17px;
+    color: rgb(137, 134, 134);
+}
+.last a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+.last a li{
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.navbar2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar2 div{
+    display: flex;
+}
+.navbar2 div li{
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.navbar2 div p{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40px;
+    height: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+.navbar2 li{
+    font-size: 20px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.navbar2 span input {
+    border: 2px solid black;
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+   margin-left: 230px;
+   padding: 10px;
+}
+.navbar2 span i {
+    position: relative;
+    left:-60px;
+}
+.house{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 200px;
+     /* border: 2px solid black; */
+     margin-right: 100px;
+}
+.house div{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+.house div img{
+    width: 100%;
+}
+.house1{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0px;
+    padding: 0px;
+    /* width: 300px;
+    height: 400px; */
+}
+.house1 span{
+    margin-left: 10px;
+    /* border: 2px solid red; */
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+.house span img{
+    width: 100%;
+    height: 100%;
+   
+}
+.tiny {
+    display: flex;
+    font-size: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(148, 146, 146);
+}
+.tiny span{
+    margin-right: 100px;
+    /* border: 2px solid; */
+}
+.parenttiny{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 150px;
+    border-bottom: 1px solid gray;
+}
+.tiny1
+{
+    font-size: 20px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(95, 93, 93);
+}
+
+
+.tiny0{
+    /* border: 2px solid black; */
+    margin-left: 200px; 
+    width: 700px;
+    padding-bottom: 30px;
+
+}
+.tiny2{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(55, 54, 54);
+    border-bottom: 1px solid rgb(113, 113, 113);
+    padding-bottom: 30px;
+}
+.tiny3 { 
+    display: flex;
+    padding-bottom: 50px;
+    border-bottom: 1px  solid rgb(157, 155, 155);
+}
+.tiny3 span{
+    border: 2px solid rgb(206, 206, 206);
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+     box-shadow: 2px 2px 5px rgb(113, 113, 113);
+} 
+.tiny4{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(151, 150, 150);
+    margin-bottom: 60px;
+}
+.tiny4 span{
+    margin: 5px;
+}
+.tiny5 {
+    font-size: 19px;
+    padding-bottom: 70px ;
+    border-bottom: 1px solid grey;
+}
+.tiny5 img{
+    border-radius: 10px;
+    height: 230px;
+    width: 350px;
+}
+.tiny5 button{
+    width:280px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+}
+.tiny6{
+    display: flex;
+   padding-bottom: 50px;
+}
+.table{
+    font-size: 20px;
+    margin-right: 30px;
+    
+}
+.reserve {
+    margin-top: 50px;
+    box-shadow: 5px 5px 20px rgb(70, 70, 70);
+    margin-right: 150px;
+    font-size: 20px;
+    margin-left: 0px;
+    width: 400px;
+    padding-top: 30px;
+    border-radius: 10px;
+    height: 460px;
+    position: sticky;
+    top: 50px;
+    left: 1000px;
+    border: 2px solid ;
+}
+.reserve span{
+    font-size: 25px;
+    margin-left: 80px;
+}
+.reserve div{
+    border: 1px solid rgb(126, 125, 125);
+    margin: 20px;
+    border-radius: 10px;
+}
+.reserve1{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.reserve1 div {
+    border: 1px solid rgb(107, 107, 107);
+    padding-right: 20px;
+    font-size: 18px;
+   margin: 0px;
+   padding: 5px;
+   border-radius: 0px;
+}
+.reserve1 span{
+    font-size: 20px;
+    padding-left: 10px;
+    color: black;
+    padding: 10px;
+}
+.reserve button{
+    font-size: 20px;
+    width:350px;
+    height: 50px;
+     margin-left: 25px;
+     background-color: red;
+     border: none;
+     border-radius: 10px;
+     color: white;
+}
+.reserve p{
+    font-size: 20px;
+    margin-left: 100px;
+    color: rgb(55, 54, 54);
+}
+.reserve a{
+    color: rgb(58, 58, 58);
+    font-size: 20px;
+    margin-left: 20px;
+}
+.reserve pre{
+    font-size: 22px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.reserve2 {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top:50px ;
+    box-shadow: 5px 5px 20px rgb(162, 162, 162);
+    font-size: 20px;
+    padding: 15px;
+   
+} 
+#fa1{
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: -30px;
+    
+}
+.star{
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 30px;
+    /* margin-bottom: 50px; */
+}
+
+.review{
+    margin-left: 200px;
+    font-size: 25px;
+    color: rgb(77, 77, 77);
+    display: flex;
+   
+}
+.review span{
+    margin-right: 400px;
+}
+.footer1{
+    display: flex;
+}
+.footer1 span{
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+}
+#mainfooter{
+    display: grid;
+    grid-template-columns: auto auto;
+    border-bottom: 2px solid rgb(73, 69, 69);
+    margin-left: 170px;
+    margin-right: 100px;
+}
+.mainfooter{
+    font-size: 20px;
+    width: 500px;
+}
+.mainfooter2{
+    margin-left: 0px;
+    font-size: 20px;
+    width: 500px;
+}
